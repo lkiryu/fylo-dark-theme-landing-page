@@ -39,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url(../public/images/bg-curvy-desktop.svg);
+    background-image: url(./images/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 100% 300px;
