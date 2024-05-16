@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/fylo-dark-theme-landing-page/static/css/main.a141483a.css",
+    "main.js": "/fylo-dark-theme-landing-page/static/js/main.781a05d5.js",
+    "static/media/illustration-intro.png": "/fylo-dark-theme-landing-page/static/media/illustration-intro.c20d85255009f195b4a6.png",
+    "static/media/illustration-stay-productive.png": "/fylo-dark-theme-landing-page/static/media/illustration-stay-productive.5d7a50ea74b08000cd67.png",
+    "static/media/logo.svg": "/fylo-dark-theme-landing-page/static/media/logo.f5363383bf279490c4aba63ca2917a80.svg",
+    "index.html": "/fylo-dark-theme-landing-page/index.html",
+    "static/media/bg-curvy-desktop.svg": "/fylo-dark-theme-landing-page/static/media/bg-curvy-desktop.953dbf39a0ba9d537f9d.svg",
+    "main.a141483a.css.map": "/fylo-dark-theme-landing-page/static/css/main.a141483a.css.map",
+    "main.781a05d5.js.map": "/fylo-dark-theme-landing-page/static/js/main.781a05d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a141483a.css",
+    "static/js/main.781a05d5.js"
+  ]
+}
