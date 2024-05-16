@@ -1,0 +1,43 @@
+.info-fylo{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows:  repeat(2, auto);
+    gap: 100px;
+    margin: 50px 0;
+}
+
+.info-fylo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.info-fylo img, .info-fylo .title{
+    margin-bottom: 20px;
+}
+
+.info-fylo .description{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+@media(max-width:1200px){
+    .info-fylo{
+        gap: 30px;
+    }
+}
+
+@media(max-width:800px){
+    .info-fylo{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(4, auto);
+    }
+}
+
+@media(max-width:500px){
+    .info-fylo div{
+        width: 300px;
+    }
+}
