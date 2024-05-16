@@ -1,38 +1,51 @@
 import React from "react";
-import iconAccessAnywhere from '../../images/icon-access-anywhere.svg'
-import iconSecurity from '../../images/icon-security.svg'
-import iconCollaboration from '../../images/icon-collaboration.svg'
-import iconAnyFile from '../../images/icon-any-file.svg'
+import Infos from "../infos/infos";
 
 import './sectionInfo.css'
+
+const infosdata = [
+    {
+        imageSrc: "./images/icon-access-anywhere.svg",
+        alt: "icon access anywhere",
+        title: "Access your files, anywhere",
+        description: "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+    },
+    {
+        imageSrc: "./images/icon-security.svg",
+        alt: "icon security",
+        title: "Security you can trust",
+        description: "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.",
+    },
+    {
+        imageSrc: "./images/icon-collaboration.svg",
+        alt: "icon collaboration",
+        title: "Real-time collaboration",
+        description: "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.",
+    },
+    {
+        imageSrc: "./images/icon-any-file.svg",
+        alt: "icon any file",
+        title: "Store any type of file",
+        description: "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
+    }
+]
 
 const SectionInfo = () => {
     return (
         <section className="info-fylo">
-            <div>
-                <img src={iconAccessAnywhere} alt="icon access anywhere"></img>
-                <h3 className="title">Access your files, anywhere</h3>
-                <p className="description">The ability to use a smartphone, tablet, or computer to access your account means your
-                    files follow you everywhere.</p>
-            </div>
-            <div>
-                <img src={iconSecurity} alt="icon security"></img>
-                <h3 className="title">Security you can trust</h3>
-                <p className="description">2-factor authentication and user-controlled encryption are just a couple of the security
-                    features we allow to help secure your files.</p>
-            </div>
-            <div>
-                <img src={iconCollaboration} alt="icon collaboration"></img>
-                <h3 className="title">Real-time collaboration</h3>
-                <p className="description">Securely share files and folders with friends, family and colleagues for live collaboration.
-                    No email attachments required.</p>
-            </div>
-            <div>
-                <img src={iconAnyFile} alt="icon any file"></img>
-                <h3 className="title">Store any type of file</h3>
-                <p className="description">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-                    file types to be securely stored and shared.</p>
-            </div>
+            {
+                infosdata.map((item, index) => {
+                    return (
+                        <Infos
+                            key={index}
+                            imageSrc={item.imageSrc}
+                            alt={item.alt}
+                            title={item.title}
+                            description={item.description}
+                        />
+                    )
+                })
+            }
         </section>
     )
 }
