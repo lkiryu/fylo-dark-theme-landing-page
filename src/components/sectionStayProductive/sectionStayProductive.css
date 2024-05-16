@@ -70,7 +70,7 @@
     }
 }
 
-@media(max-width:800px) {
+@media(max-width:900px) {
     .stay-productive {
         flex-direction: column;
     }
@@ -89,7 +89,7 @@
     }
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
     .stay-productive img {
         width: 300px;
     }

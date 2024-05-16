@@ -14,7 +14,7 @@
     width: 350px;
 }
 
-.card .comment {
+.card .testimonial {
     color: hsla(0, 0%, 100%, 80%);
     font-size: 14px;
     margin-bottom: 20px;
@@ -31,7 +31,7 @@
     margin-right: 10px;
 }
 
-.card .user-info .userName {
+.card .user-info .username {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 14px;
@@ -54,7 +54,7 @@
     }
 }
 
-@media(max-width:800px) {
+@media(max-width:900px) {
     .comments {
         flex-direction: column;
         padding: 30px;

@@ -55,7 +55,7 @@
     color: hsl(0, 0%, 100%);
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
     .mobile-menu {
         display: block;
     }

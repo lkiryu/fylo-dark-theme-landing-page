@@ -29,14 +29,14 @@
     }
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
     .info-fylo{
         grid-template-columns: repeat(1, auto);
         grid-template-rows:  repeat(4, auto);
     }
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
     .info-fylo div{
         width: 300px;
     }

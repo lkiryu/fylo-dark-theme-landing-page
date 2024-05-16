@@ -1,48 +1,45 @@
 import React from "react";
-import profilePicture1 from '../../images/profile-1.jpg'
-import profilePicture2 from '../../images/profile-2.jpg'
-import profilePicture3 from '../../images/profile-3.jpg'
+import Card from "../card/card";
 
 import './sectionComments.css'
+
+const cardData = [
+    {
+        testimonial: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        src: "./images/profile-1.jpg",
+        username: "Satish Patel",
+        tag: "Founder & CEO, Huddle",
+    },
+    {
+        testimonial: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        src: "./images/profile-2.jpg",
+        username: "Bruce McKenzie",
+        tag: "Founder & CEO, Huddle",
+    },
+    {
+        testimonial: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        src: "./images/profile-3.jpg",
+        username: "Iva Boyd",
+        tag: "Founder & CEO, Huddle",
+    }
+]
 
 const SectionComments = () => {
     return (
         <section className="comments">
-            <div className="card">
-                <p className="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-                    become a well-oiled collaboration machine.</p>
-                <div className="user-info">
-                    <img src={profilePicture1} alt="profile-illustration"></img>
-                    <ul>
-                        <li className="userName">Satish Patel</li>
-                        <li className="tag">Founder & CEO, Huddle</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="card">
-                <p className="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-                    become a well-oiled collaboration machine.</p>
-                <div className="user-info">
-                    <img src={profilePicture2} alt="profile-illustration"></img>
-                    <ul>
-                        <li className="userName">Bruce McKenzie</li>
-                        <li className="tag">Founder & CEO, Huddle</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div className="card">
-                <p className="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-                    become a well-oiled collaboration machine.</p>
-                <div className="user-info">
-                    <img src={profilePicture3} alt="profile-illustration"></img>
-                    <ul>
-                        <li className="userName">Iva Boyd</li>
-                        <li className="tag">Founder & CEO, Huddle</li>
-                    </ul>
-                </div>
-            </div>
+            {
+                cardData.map((item, index) => {
+                    return (
+                        <Card
+                            key={index}
+                            testimonial={item.testimonial}
+                            src={item.src}
+                            username={item.username}
+                            tag={item.tag}
+                        />
+                    )
+                })
+            }
         </section>
     )
 }

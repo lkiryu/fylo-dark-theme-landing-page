@@ -86,7 +86,7 @@
     }
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
     .footer-content .info{
         flex-direction: column;
         gap: 30px;

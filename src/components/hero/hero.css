@@ -46,7 +46,7 @@
     opacity: 80%;
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
     .hero img, .hero .info .title {
         width: 600px;
     }
@@ -61,7 +61,7 @@
     }
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
     .hero img, .hero .info .title {
         width: 300px;
     }
